@@ -1,7 +1,8 @@
 from mcp.server.fastmcp import FastMCP
-import tools
 
-# Inicializar el servidor MCP
+from . import tools
+
+# Inicializar el servidor MCP usando FastMCP
 mcp = FastMCP("BibliotecaServer")
 
 
@@ -46,5 +47,5 @@ def buscar_alternativas_tool(libro_id: int) -> str:
 
 
 if __name__ == "__main__":
-    # Iniciar el servidor mediante comunicación STDIO
-    mcp.run()
+    # Inicia el servidor mediante STDIO estándar transport
+    mcp.run(transport="stdio")

@@ -1,5 +1,4 @@
-from db_connection import get_db_connection
-
+from .db_connection import get_db_connection
 
 def buscar_libros(query: str = None, tema: str = None):
     """

@@ -2,5 +2,6 @@ google-genai
 pymysql
 fastapi
 uvicorn
-mcp
+mcp>=1.28,<2
 python-dotenv
+DBUtils
